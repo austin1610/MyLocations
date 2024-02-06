@@ -19,7 +19,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet weak var getButton: UIButton!
     
     let locationManager = CLLocationManager()
-    var location: CLLocation?
+    var location: CLLocation? // store users current location here
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +74,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     ) {
         let newLocation = locations.last!
         print("didUpdateLocations \(newLocation)")
+        location = newLocation
+        updateLabels()
     }
 
 
