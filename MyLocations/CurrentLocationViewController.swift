@@ -32,6 +32,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             locationManager.requestWhenInUseAuthorization()
             return
         }
+        // return if location authorization is denied or restricted
+        if authStatus == .denied || authStatus == .restricted {
+            showLocationServicesDeniedAlert()
+            return
+        }
         locationManager.delegate = self
         locationManager.desiredAccuracy =
       kCLLocationAccuracyNearestTenMeters
