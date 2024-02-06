@@ -32,6 +32,22 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
       kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
     }
+    
+    // MARK: - CLLocationManagerDelegate
+    func locationManager(
+       _ manager: CLLocationManager,
+       didFailWithError error: Error
+    ) {
+        print("didFailWithError \(error.localizedDescription)")
+    }
+    
+    func locationManager(
+       _ manager: CLLocationManager,
+       didUpdateLocations locations: [CLLocation]
+    ) {
+        let newLocation = locations.last!
+        print("didUpdateLocations \(newLocation)")
+    }
 
 
 }
