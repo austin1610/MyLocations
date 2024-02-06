@@ -23,6 +23,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateLabels()
     }
     
     // MARK: - Action
