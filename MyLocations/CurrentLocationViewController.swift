@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-class CurrentLocationViewController: UIViewController {
+class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
     
     // All needed outlets
     @IBOutlet weak var messageLabel: UILabel!
