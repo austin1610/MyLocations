@@ -27,7 +27,10 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     // MARK: - Action
     @IBAction func getLocation() {
-        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy =
+      kCLLocationAccuracyNearestTenMeters
+        locationManager.startUpdatingLocation()
     }
 
 
