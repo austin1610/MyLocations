@@ -22,11 +22,16 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     // MARK: - Action
     @IBAction func getLocation() {
+        // asks permission for location
+        let authStatus = locationManager.authorizationStatus
+        if authStatus == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+            return
+        }
         locationManager.delegate = self
         locationManager.desiredAccuracy =
       kCLLocationAccuracyNearestTenMeters
