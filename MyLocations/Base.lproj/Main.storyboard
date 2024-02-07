@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="2008.8" y="-27.436281859070466"/>
         </scene>
-        <!--Location Details View Controller-->
+        <!--Tag Location-->
         <scene sceneID="3MR-ac-qVU">
             <objects>
                 <tableViewController id="JXW-za-GZs" customClass="LocationDetailsViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +158,7 @@
                             <outlet property="delegate" destination="JXW-za-GZs" id="GBc-BA-ZK2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="X1G-Tp-Hwf"/>
+                    <navigationItem key="navigationItem" title="Tag Location" id="X1G-Tp-Hwf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="std-oD-Umx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
