@@ -100,6 +100,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tag" id="P3y-ct-1Xw"/>
                     <connections>
+                        <outlet property="addressLabel" destination="CeE-xi-po2" id="0gB-aL-lQh"/>
                         <outlet property="getButton" destination="D6f-Kd-3Eb" id="0dx-Kc-dko"/>
                         <outlet property="latitudeLabel" destination="2v0-5g-9VI" id="Kpf-85-zkC"/>
                         <outlet property="longitudeLabel" destination="fgk-Ja-XVl" id="Wvs-ky-7UA"/>
