@@ -364,7 +364,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="YbG-A3-1G5" kind="unwind" unwindAction="categoryPickerDidPickCategory:" id="T8F-5k-ck6"/>
+                                    <segue destination="YbG-A3-1G5" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="T8F-5k-ck6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
