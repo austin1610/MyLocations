@@ -39,6 +39,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         navigationController?.isNavigationBarHidden = true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     // MARK: - Action
     @IBAction func getLocation() {
         // asks permission for location
