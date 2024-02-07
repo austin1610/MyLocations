@@ -96,6 +96,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             }
             messageLabel.text = statusMessage
         }
+        configureGetButton()
     }
     
     func configureGetButton() {
