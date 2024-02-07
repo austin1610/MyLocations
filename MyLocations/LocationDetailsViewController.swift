@@ -48,6 +48,14 @@ class LocationDetailsViewController: UITableViewController {
         dateLabel.text = format(date: Date())
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PickCategory" {
+            let controller = segue.destination as! CategoryPickerViewController
+            controller.selectedCategoryName = categoryName
+        }
+    }
+    
     // MARK: - Actions
     @IBAction func done() {
         navigationController?.popViewController(animated: true)
