@@ -42,7 +42,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             showLocationServicesDeniedAlert()
             return
         }
-        startLocationManager()
+        if updatingLocation {
+            stopLocationManager()
+        } else {
+            location = nil
+            lastLocationError = nil
+            startLocationManager()
+        }
         updateLabels()
     }
     
