@@ -67,6 +67,9 @@
                                 <rect key="frame" x="16" y="318" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tag Location"/>
+                                <connections>
+                                    <segue destination="JXW-za-GZs" kind="show" id="JcV-1E-wax"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -135,6 +138,7 @@
                             <outlet property="delegate" destination="JXW-za-GZs" id="GBc-BA-ZK2"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="X1G-Tp-Hwf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="std-oD-Umx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
