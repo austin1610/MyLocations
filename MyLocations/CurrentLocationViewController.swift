@@ -18,8 +18,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet weak var tagButton: UIButton!
     @IBOutlet weak var getButton: UIButton!
     
+    // Instance variables
     let locationManager = CLLocationManager()
     var location: CLLocation? // store users current location here
+    var updatingLocation = false
+    var lastLocationError: Error?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +92,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
        didFailWithError error: Error
     ) {
         print("didFailWithError \(error.localizedDescription)")
+        
+        if (error as NSError).code == CLError.locationUnknown.rawValue { //CLError.locationUnknown = location manager cant obtain location right now
+            return
+        }
+        lastLocationError = error // For more serious errors, store it in an object
+        stopLocationManager()
+        updateLabels()
     }
     
     func locationManager(
@@ -99,6 +109,14 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         print("didUpdateLocations \(newLocation)")
         location = newLocation
         updateLabels()
+    }
+    
+    func stopLocationManager() {
+        if updatingLocation {
+            locationManager.stopUpdatingLocation()
+            locationManager.delegate = nil
+            updatingLocation = false
+        }
     }
 
 
