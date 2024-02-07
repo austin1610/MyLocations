@@ -14,6 +14,11 @@ class LocationDetailsViewController: UITableViewController {
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
+    var coordinate = CLLocationCoordinate2D(
+        latitude: 0,
+        longitude: 0)
+    var placemark: CLPlacemark?
+    
  // MARK: - Actions
  @IBAction func done() {
      navigationController?.popViewController(animated: true)
