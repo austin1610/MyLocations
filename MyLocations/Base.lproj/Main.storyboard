@@ -173,7 +173,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sje-yu-4ta" kind="show" id="EiE-lt-Gaf"/>
+                                            <segue destination="sje-yu-4ta" kind="show" identifier="PickCategory" id="EiE-lt-Gaf"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

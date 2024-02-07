@@ -28,6 +28,8 @@ class LocationDetailsViewController: UITableViewController {
         longitude: 0)
     var placemark: CLPlacemark?
     
+    var categoryName = "No Category"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionTextView.text = ""
