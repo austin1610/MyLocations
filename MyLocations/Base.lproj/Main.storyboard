@@ -172,6 +172,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sje-yu-4ta" kind="show" id="EiE-lt-Gaf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -367,6 +370,7 @@
                             <outlet property="delegate" destination="sje-yu-4ta" id="Z2Y-xU-cwc"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="hoq-cZ-uei"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEm-do-kNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
