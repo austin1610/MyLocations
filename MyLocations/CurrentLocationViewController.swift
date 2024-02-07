@@ -98,6 +98,14 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         }
     }
     
+    func configureGetButton() {
+        if updatingLocation {
+            getButton.setTitle("Stop", for: .normal)
+        } else {
+            getButton.setTitle("Get My Location", for: .normal)
+        }
+    }
+    
     
     // MARK: - CLLocationManagerDelegate
     func locationManager(
