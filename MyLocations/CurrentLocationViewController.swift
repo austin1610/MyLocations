@@ -23,6 +23,10 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     var location: CLLocation? // store users current location here
     var updatingLocation = false
     var lastLocationError: Error?
+    let geocoder = CLGeocoder()
+    var placemark: CLPlacemark?
+    var performingReverseGeocoding = false
+    var lastGeocodingError: Error?
 
     override func viewDidLoad() {
         super.viewDidLoad()
