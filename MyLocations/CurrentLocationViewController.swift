@@ -42,10 +42,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             showLocationServicesDeniedAlert()
             return
         }
-        locationManager.delegate = self
-        locationManager.desiredAccuracy =
-      kCLLocationAccuracyNearestTenMeters
-        locationManager.startUpdatingLocation()
+        startLocationManager()
+        updateLabels()
     }
     
     // MARK: - Helper Method
