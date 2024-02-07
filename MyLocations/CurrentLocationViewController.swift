@@ -179,7 +179,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     }
     
     @objc func didTimeOut() {
-        print("*** Time out")
+        //print("*** Time out")
         if location == nil {
             stopLocationManager()
             lastLocationError = NSError(
@@ -196,7 +196,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         _ manager: CLLocationManager,
         didFailWithError error: Error
     ) {
-        print("didFailWithError \(error.localizedDescription)")
+        //print("didFailWithError \(error.localizedDescription)")
         
         if (error as NSError).code == CLError.locationUnknown.rawValue { //CLError.locationUnknown = location manager cant obtain location right now
             return
@@ -211,7 +211,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         didUpdateLocations locations: [CLLocation]
     ) {
         let newLocation = locations.last!
-        print("didUpdateLocations \(newLocation)")
+        //print("didUpdateLocations \(newLocation)")
         
         // if takes longer than 5 seconds then cache
         if newLocation.timestamp.timeIntervalSinceNow < -5 {
@@ -235,7 +235,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             
             // looking for equal to or better than the desired accuracy,
             if newLocation.horizontalAccuracy <= locationManager.desiredAccuracy {
-                print("*** We're done!")
+                //print("*** We're done!")
                 stopLocationManager()
                 
                 if distance > 0 {
@@ -244,7 +244,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             }
             updateLabels()
             if !performingReverseGeocoding {
-                print("*** Going to geocode")
+                //print("*** Going to geocode")
                 
                 performingReverseGeocoding = true
                 
@@ -263,7 +263,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         } else if distance < 1 {
             let timeInterval = newLocation.timestamp.timeIntervalSince(location!.timestamp)
             if timeInterval > 10 {
-                print("*** Force done!")
+                //print("*** Force done!")
                 stopLocationManager()
                 updateLabels()
             }
