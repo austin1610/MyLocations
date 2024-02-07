@@ -18,6 +18,7 @@ class HudView: UIView {
         hudView.isOpaque = false
         view.addSubview(hudView)
         view.isUserInteractionEnabled = false
+        hudView.show(animated: animated)
         return hudView
     }
     
