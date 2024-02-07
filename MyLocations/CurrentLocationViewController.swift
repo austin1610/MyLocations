@@ -172,6 +172,9 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                         print("*** Reverse Geocoding error: \(error.localizedDescription)")
                         return
                     }
+                    if let places = placemarks {
+                        print("*** Found places: \(places)")
+                    }
                 }
             }
         }
