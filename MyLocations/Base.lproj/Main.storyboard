@@ -158,7 +158,18 @@
                             <outlet property="delegate" destination="JXW-za-GZs" id="GBc-BA-ZK2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tag Location" id="X1G-Tp-Hwf"/>
+                    <navigationItem key="navigationItem" title="Tag Location" id="X1G-Tp-Hwf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HE3-8d-Mh1">
+                            <connections>
+                                <action selector="cancel" destination="JXW-za-GZs" id="xDK-Tr-GCs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="6YI-H4-Wb9">
+                            <connections>
+                                <action selector="done" destination="JXW-za-GZs" id="I4A-Jp-UEp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="std-oD-Umx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
