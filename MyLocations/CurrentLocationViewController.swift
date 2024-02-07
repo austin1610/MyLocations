@@ -27,7 +27,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     var placemark: CLPlacemark?
     var performingReverseGeocoding = false
     var lastGeocodingError: Error?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabels()
@@ -119,6 +119,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         configureGetButton()
     }
     
+    
     func configureGetButton() {
         if updatingLocation {
             getButton.setTitle("Stop", for: .normal)
@@ -127,11 +128,49 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         }
     }
     
+    func startLocationManager() {
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+            updatingLocation = true
+        }
+    }
+    
+    func stopLocationManager() {
+        if updatingLocation {
+            locationManager.stopUpdatingLocation()
+            locationManager.delegate = nil
+            updatingLocation = false
+        }
+    }
+    
+    func string(from placemark: CLPlacemark) -> String {
+        var line1 = ""
+        if let tmp = placemark.subThoroughfare {
+            line1 += tmp + " "
+        }
+        if let tmp = placemark.thoroughfare {
+            line1 += tmp
+        }
+        var line2 = ""
+        if let tmp = placemark.locality {
+            line2 += tmp + " "
+        }
+        if let tmp = placemark.administrativeArea {
+            line2 += tmp + " "
+        }
+        if let tmp = placemark.postalCode {
+            line2 += tmp
+        }
+        return line1 + "\n" + line2
+    }
+    
     
     // MARK: - CLLocationManagerDelegate
     func locationManager(
-       _ manager: CLLocationManager,
-       didFailWithError error: Error
+        _ manager: CLLocationManager,
+        didFailWithError error: Error
     ) {
         print("didFailWithError \(error.localizedDescription)")
         
@@ -144,8 +183,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     }
     
     func locationManager(
-       _ manager: CLLocationManager,
-       didUpdateLocations locations: [CLLocation]
+        _ manager: CLLocationManager,
+        didUpdateLocations locations: [CLLocation]
     ) {
         let newLocation = locations.last!
         print("didUpdateLocations \(newLocation)")
@@ -183,31 +222,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                         self.placemark = places.last!
                     } else {
                         self.placemark = nil
-                }
+                    }
                     
                     self.performingReverseGeocoding = false
                     self.updateLabels()
+                }
             }
         }
     }
-    
-    func startLocationManager() {
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-            updatingLocation = true
-        }
-    }
-            
-    func stopLocationManager() {
-        if updatingLocation {
-            locationManager.stopUpdatingLocation()
-            locationManager.delegate = nil
-            updatingLocation = false
-        }
-    }
-
-
 }
 
