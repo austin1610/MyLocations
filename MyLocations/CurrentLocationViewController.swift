@@ -121,6 +121,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         let newLocation = locations.last!
         print("didUpdateLocations \(newLocation)")
         location = newLocation
+        lastLocationError = nil
         updateLabels()
     }
     
