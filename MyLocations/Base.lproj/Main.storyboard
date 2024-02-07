@@ -338,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="2874" y="-27"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Category Picker View Controller-->
         <scene sceneID="kCC-TW-d4C">
             <objects>
-                <tableViewController id="sje-yu-4ta" sceneMemberID="viewController">
+                <tableViewController id="sje-yu-4ta" customClass="CategoryPickerViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aC4-nV-gMs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
