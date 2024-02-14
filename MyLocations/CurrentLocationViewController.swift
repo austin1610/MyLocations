@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
   @IBOutlet var messageLabel: UILabel!
@@ -25,6 +26,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
   var performingReverseGeocoding = false
   var lastGeocodingError: Error?
   var timer: Timer?
+  var managedObjectContext: NSManagedObjectContext!
 
   override func viewDidLoad() {
     super.viewDidLoad()
