@@ -28,6 +28,7 @@ class LocationDetailsViewController: UITableViewController {
   var placemark: CLPlacemark?
   var categoryName = "No Category"
   var managedObjectContext: NSManagedObjectContext!
+  var date = Date()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -44,7 +45,7 @@ class LocationDetailsViewController: UITableViewController {
       addressLabel.text = "No Address Found"
     }
 
-    dateLabel.text = format(date: Date())
+    dateLabel.text = format(date: date)
     // Hide keyboard
     let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
     gestureRecognizer.cancelsTouchesInView = false
