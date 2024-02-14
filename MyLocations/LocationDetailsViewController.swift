@@ -62,13 +62,29 @@ class LocationDetailsViewController: UITableViewController {
 
   // MARK: - Actions
   @IBAction func done() {
-    guard let mainView = navigationController?.parent?.view else { return }
-    let hudView = HudView.hud(inView: mainView, animated: true)
-    hudView.text = "Tagged"
-    afterDelay(0.6) {
-      hudView.hide()
-      self.navigationController?.popViewController(animated: true)
-    }
+      guard let mainView = navigationController?.parent?.view
+      else { return }
+      let hudView = HudView.hud(inView: mainView, animated: true)
+      hudView.text = "Tagged"
+      
+       let location = Location(context: managedObjectContext)
+       
+       location.locationDescription = descriptionTextView.text
+       location.category = categoryName
+       location.latitude = coordinate.latitude
+       location.longitude = coordinate.longitude
+       location.date = date
+       location.placemark = placemark
+       
+      do {
+          try managedObjectContext.save()
+          afterDelay(0.6) {
+              hudView.hide()
+              self.navigationController?.popViewController(animated: true)
+          }
+      } catch {
+          fatalError("Error: \(error)")
+      }
   }
 
   @IBAction func cancel() {
