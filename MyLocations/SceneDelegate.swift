@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let controller = navController.viewControllers.first as! CurrentLocationViewController
             controller.managedObjectContext = managedObjectContext
         }
+        listenForFatalCoreDataNotifications()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
