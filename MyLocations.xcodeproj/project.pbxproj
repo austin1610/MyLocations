@@ -17,6 +17,7 @@
 		265CB4C62B7D3E1C00798392 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CB4C42B7D3E1C00798392 /* Location+CoreDataClass.swift */; };
 		265CB4C72B7D3E1C00798392 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CB4C52B7D3E1C00798392 /* Location+CoreDataProperties.swift */; };
 		26BDEC7F2B7DB5B000F7BF8F /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */; };
+		26BDEC812B7DBCF100F7BF8F /* LocationCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BDEC802B7DBCF100F7BF8F /* LocationCellTableViewCell.swift */; };
 		26CEEECA2B73568700AFC3A0 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEEEC92B73568700AFC3A0 /* LocationDetailsViewController.swift */; };
 		26CEEECC2B74291800AFC3A0 /*  CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEEECB2B74291800AFC3A0 /*  CategoryPickerViewController.swift */; };
 		26CEEECE2B74351200AFC3A0 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEEECD2B74351200AFC3A0 /* HudView.swift */; };
@@ -36,6 +37,7 @@
 		265CB4C42B7D3E1C00798392 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
 		265CB4C52B7D3E1C00798392 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		26BDEC802B7DBCF100F7BF8F /* LocationCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellTableViewCell.swift; sourceTree = "<group>"; };
 		26CEEEC92B73568700AFC3A0 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		26CEEECB2B74291800AFC3A0 /*  CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CategoryPickerViewController.swift"; sourceTree = "<group>"; };
 		26CEEECD2B74351200AFC3A0 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		261ED0152B70CDB500F19BAA = {
 			isa = PBXGroup;
 			children = (
+				26BDEC802B7DBCF100F7BF8F /* LocationCellTableViewCell.swift */,
 				26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */,
 				265CB4C42B7D3E1C00798392 /* Location+CoreDataClass.swift */,
 				265CB4C52B7D3E1C00798392 /* Location+CoreDataProperties.swift */,
@@ -164,6 +167,7 @@
 			files = (
 				26CEEECC2B74291800AFC3A0 /*  CategoryPickerViewController.swift in Sources */,
 				26CEEECA2B73568700AFC3A0 /* LocationDetailsViewController.swift in Sources */,
+				26BDEC812B7DBCF100F7BF8F /* LocationCellTableViewCell.swift in Sources */,
 				26CEEECE2B74351200AFC3A0 /* HudView.swift in Sources */,
 				265CB4C32B7D3B8D00798392 /* MyLocations.xcdatamodeld in Sources */,
 				26BDEC7F2B7DB5B000F7BF8F /* LocationsViewController.swift in Sources */,
