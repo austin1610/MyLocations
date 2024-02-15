@@ -447,11 +447,11 @@
             </objects>
             <point key="canvasLocation" x="2009" y="661"/>
         </scene>
-        <!--Item-->
+        <!--Locations-->
         <scene sceneID="0RD-1t-CKe">
             <objects>
                 <navigationController id="G9a-tY-PM8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="py3-pa-kEG"/>
+                    <tabBarItem key="tabBarItem" title="Locations" id="py3-pa-kEG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UlN-fx-0rZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
