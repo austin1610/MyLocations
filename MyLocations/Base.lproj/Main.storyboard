@@ -458,6 +458,10 @@
                                         <constraint firstAttribute="trailing" secondItem="b2n-oY-rGN" secondAttribute="trailing" constant="16" id="zXQ-Cz-Yk0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="b2n-oY-rGN" id="z4a-wJ-Jwi"/>
+                                    <outlet property="descriptionLabel" destination="r40-MA-9bh" id="3AY-mF-SF1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
