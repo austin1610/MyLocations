@@ -69,6 +69,14 @@ class LocationsViewController: UITableViewController {
     
     
     // MARK: - Table View Delegates
+    override func numberOfSections(in tableView: UITableView) -> Int {
+      return fetchedResultsController.sections!.count
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+      let sectionInfo = fetchedResultsController.sections![section]
+      return sectionInfo.name
+    }
     override func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
