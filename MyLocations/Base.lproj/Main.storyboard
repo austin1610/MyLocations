@@ -461,7 +461,7 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="b2n-oY-rGN" id="z4a-wJ-Jwi"/>
                                     <outlet property="descriptionLabel" destination="r40-MA-9bh" id="3AY-mF-SF1"/>
-                                    <segue destination="JXW-za-GZs" kind="show" id="s7v-nA-IjN"/>
+                                    <segue destination="JXW-za-GZs" kind="show" identifier="EditLocation" id="s7v-nA-IjN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
