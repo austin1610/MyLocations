@@ -18,10 +18,9 @@ class LocationsViewController: UITableViewController {
         let entity = Location.entity()
         fetchRequest.entity = entity
         
-        let sortDescriptor = NSSortDescriptor(
-            key: "date",
-            ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+        let sort1 = NSSortDescriptor(key: "category", ascending: true)
+        let sort2 = NSSortDescriptor(key: "date", ascending: true)
+        fetchRequest.sortDescriptors = [sort1, sort2]
         
         fetchRequest.fetchBatchSize = 20
         
