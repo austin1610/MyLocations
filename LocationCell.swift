@@ -8,6 +8,9 @@
 import UIKit
 
 class LocationCell: UITableViewCell {
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
