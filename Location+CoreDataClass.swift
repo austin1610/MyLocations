@@ -27,4 +27,8 @@ public class Location: NSManagedObject, MKAnnotation {
     public var subtitle: String? {
         return category
     }
+    
+    var hasPhoto: Bool {
+        return photoID != nil
+    }
 }
