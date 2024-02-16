@@ -23,6 +23,8 @@ class LocationDetailsViewController: UITableViewController {
   @IBOutlet weak var longitudeLabel: UILabel!
   @IBOutlet weak var addressLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
+  @IBOutlet var imageView: UIImageView!
+  @IBOutlet var addPhotoLabel: UILabel!
 
   var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
   var placemark: CLPlacemark?
