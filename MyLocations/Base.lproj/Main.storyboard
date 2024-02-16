@@ -331,10 +331,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="BQV-ed-55t" id="ylx-aG-GzN"/>
                         <outlet property="addressLabel" destination="IlW-AO-vMR" id="UyM-cH-2Rm"/>
                         <outlet property="categoryLabel" destination="DqU-ez-LUv" id="l1Y-gD-86u"/>
                         <outlet property="dateLabel" destination="6Ju-kL-95H" id="mmp-hG-d0A"/>
                         <outlet property="descriptionTextView" destination="pB4-Cc-Fhr" id="1JI-if-7Cc"/>
+                        <outlet property="imageView" destination="hRM-aG-iLn" id="jES-pM-xEk"/>
                         <outlet property="latitudeLabel" destination="9jl-97-y0U" id="ELC-Nc-2v8"/>
                         <outlet property="longitudeLabel" destination="equ-Wa-9rc" id="zfp-Bz-qdD"/>
                     </connections>
