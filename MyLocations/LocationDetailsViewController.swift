@@ -34,6 +34,7 @@ class LocationDetailsViewController: UITableViewController {
   var date = Date()
   var descriptionText = ""
   var image: UIImage?
+  var observer: Any!
     
   var locationToEdit: Location? {
       didSet {
