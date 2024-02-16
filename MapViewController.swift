@@ -33,6 +33,8 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func showLocations() {
+        let theRegion = region(for: locations)
+        mapView.setRegion(theRegion, animated: true)
     }
     
     // MARK: - Helper methods
