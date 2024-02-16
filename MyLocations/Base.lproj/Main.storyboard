@@ -194,13 +194,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-aG-iLn">
-                                                    <rect key="frame" x="83" y="-38" width="240" height="123"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-aG-iLn">
+                                                    <rect key="frame" x="89" y="0.0" width="240" height="43.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="hRM-aG-iLn" firstAttribute="top" secondItem="paJ-9L-YZ8" secondAttribute="top" id="5J1-ps-6So"/>
                                                 <constraint firstItem="BQV-ed-55t" firstAttribute="centerY" secondItem="paJ-9L-YZ8" secondAttribute="centerY" id="6E6-yd-3W4"/>
+                                                <constraint firstAttribute="trailing" secondItem="hRM-aG-iLn" secondAttribute="trailing" constant="19.5" id="DiK-TJ-FbP"/>
+                                                <constraint firstItem="hRM-aG-iLn" firstAttribute="leading" secondItem="BQV-ed-55t" secondAttribute="trailing" constant="14" id="Hnk-5z-tBS"/>
+                                                <constraint firstAttribute="bottom" secondItem="hRM-aG-iLn" secondAttribute="bottom" id="SZW-cW-APS"/>
                                                 <constraint firstItem="BQV-ed-55t" firstAttribute="leading" secondItem="paJ-9L-YZ8" secondAttribute="leadingMargin" id="lso-Em-5UH"/>
                                             </constraints>
                                         </tableViewCellContentView>
