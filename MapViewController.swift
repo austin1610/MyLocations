@@ -19,6 +19,10 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLocations()
+        
+        if !locations.isEmpty {
+            showLocations()
+        }
     }
  
     // MARK: - Actions
