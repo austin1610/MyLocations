@@ -32,6 +32,7 @@ class LocationDetailsViewController: UITableViewController {
   var managedObjectContext: NSManagedObjectContext!
   var date = Date()
   var descriptionText = ""
+  var image: UIImage?
     
   var locationToEdit: Location? {
       didSet {
