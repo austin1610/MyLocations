@@ -25,6 +25,7 @@ class LocationDetailsViewController: UITableViewController {
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet var imageView: UIImageView!
   @IBOutlet var addPhotoLabel: UILabel!
+  @IBOutlet var imageHeight: NSLayoutConstraint!
 
   var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
   var placemark: CLPlacemark?
