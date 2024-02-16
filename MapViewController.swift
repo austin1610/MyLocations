@@ -15,6 +15,11 @@ class MapViewController: UIViewController {
     var locations = [Location]()
     
     var managedObjectContext: NSManagedObjectContext!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateLocations()
+    }
  
     // MARK: - Actions
     @IBAction func showUser() {
