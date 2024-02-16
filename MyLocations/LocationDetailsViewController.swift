@@ -187,9 +187,10 @@ class LocationDetailsViewController: UITableViewController {
             if let weakSelf = self {
                 if weakSelf.presentedViewController != nil {
                     weakSelf.dismiss(animated: false, completion: nil)
+                }
+                weakSelf.descriptionTextView.resignFirstResponder()
+            }
         }
-        weakSelf.descriptionTextView.resignFirstResponder()
-    }
   }
 
   // MARK: - Table View Delegates
