@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260FBDB52B7EE0220021AE5D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FBDB42B7EE0220021AE5D /* MapViewController.swift */; };
 		261ED0222B70CDB500F19BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261ED0212B70CDB500F19BAA /* AppDelegate.swift */; };
 		261ED0242B70CDB500F19BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261ED0232B70CDB500F19BAA /* SceneDelegate.swift */; };
 		261ED0262B70CDB500F19BAA /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261ED0252B70CDB500F19BAA /* CurrentLocationViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260FBDB42B7EE0220021AE5D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		261ED01E2B70CDB500F19BAA /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261ED0212B70CDB500F19BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261ED0232B70CDB500F19BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		261ED0152B70CDB500F19BAA = {
 			isa = PBXGroup;
 			children = (
+				260FBDB42B7EE0220021AE5D /* MapViewController.swift */,
 				26BDEC822B7DBD6600F7BF8F /* LocationCell.swift */,
 				26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */,
 				265CB4C42B7D3E1C00798392 /* Location+CoreDataClass.swift */,
@@ -171,6 +174,7 @@
 				265CB4C32B7D3B8D00798392 /* MyLocations.xcdatamodeld in Sources */,
 				26BDEC7F2B7DB5B000F7BF8F /* LocationsViewController.swift in Sources */,
 				265CB4C72B7D3E1C00798392 /* Location+CoreDataProperties.swift in Sources */,
+				260FBDB52B7EE0220021AE5D /* MapViewController.swift in Sources */,
 				26BDEC832B7DBD6600F7BF8F /* LocationCell.swift in Sources */,
 				26CEEED02B743F0A00AFC3A0 /* Functions.swift in Sources */,
 				261ED0262B70CDB500F19BAA /* CurrentLocationViewController.swift in Sources */,
