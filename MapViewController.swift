@@ -12,6 +12,8 @@ import CoreData
 class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
+    var locations = [Location]()
+    
     var managedObjectContext: NSManagedObjectContext!
  
     // MARK: - Actions
