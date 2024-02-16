@@ -75,6 +75,11 @@ class LocationDetailsViewController: UITableViewController {
     tableView.addGestureRecognizer(gestureRecognizer)
     listenForBackgroundNotification()
   }
+    
+  deinit {
+      print("*** deinit \(self)")
+      NotificationCenter.default.removeObserver(observer!)
+  }
 
   // MARK: - Navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -175,7 +180,7 @@ class LocationDetailsViewController: UITableViewController {
   }
     
   func listenForBackgroundNotification() {
-      NotificationCenter.default.addObserver(
+      observer = NotificationCenter.default.addObserver(
         forName: UIScene.didEnterBackgroundNotification,
         object: nil,
         queue: OperationQueue.main) { _ in
