@@ -183,11 +183,12 @@ class LocationDetailsViewController: UITableViewController {
       observer = NotificationCenter.default.addObserver(
         forName: UIScene.didEnterBackgroundNotification,
         object: nil,
-        queue: OperationQueue.main) { _ in
-        if self.presentedViewController != nil {
-            self.dismiss(animated: false, completion: nil)
+        queue: OperationQueue.main) { [weak self] _ in
+            if let weakSelf = self {
+                if weakSelf.presentedViewController != nil {
+                    weakSelf.dismiss(animated: false, completion: nil)
         }
-     self.descriptionTextView.resignFirstResponder()
+        weakSelf.descriptionTextView.resignFirstResponder()
     }
   }
 
