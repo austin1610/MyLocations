@@ -162,6 +162,12 @@ class LocationDetailsViewController: UITableViewController {
     }
     descriptionTextView.resignFirstResponder()
   }
+    
+  func show(image: UIImage) {
+        imageView.image = image
+        imageView.isHidden = false
+        addPhotoLabel.text = ""
+  }
 
   // MARK: - Table View Delegates
   override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
