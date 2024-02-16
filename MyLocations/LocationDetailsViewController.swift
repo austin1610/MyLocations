@@ -168,6 +168,8 @@ class LocationDetailsViewController: UITableViewController {
         imageView.image = image
         imageView.isHidden = false
         addPhotoLabel.text = ""
+        imageHeight.constant = 260
+        tableView.reloadData()
   }
 
   // MARK: - Table View Delegates
