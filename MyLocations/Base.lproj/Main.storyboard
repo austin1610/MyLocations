@@ -450,32 +450,42 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r40-MA-9bh">
-                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                            <rect key="frame" x="76" y="11" width="283" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2n-oY-rGN">
-                                            <rect key="frame" x="16" y="40" width="343" height="17"/>
+                                            <rect key="frame" x="76" y="40" width="283" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.0" alpha="0.46173417487112034" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-0b-zYf">
+                                            <rect key="frame" x="16" y="6" width="52" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="52" id="5sc-sS-9hH"/>
+                                                <constraint firstAttribute="height" constant="52" id="nBb-HK-Ecf"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="b2n-oY-rGN" firstAttribute="top" secondItem="r40-MA-9bh" secondAttribute="bottom" constant="8" symbolic="YES" id="6fP-kz-ZZG"/>
-                                        <constraint firstItem="b2n-oY-rGN" firstAttribute="leading" secondItem="oGe-j8-NiR" secondAttribute="leading" constant="16" id="Qqi-Hl-e8F"/>
+                                        <constraint firstItem="b2n-oY-rGN" firstAttribute="leading" secondItem="lYI-0b-zYf" secondAttribute="trailing" constant="8" symbolic="YES" id="DVE-g8-6aQ"/>
                                         <constraint firstItem="r40-MA-9bh" firstAttribute="top" secondItem="oGe-j8-NiR" secondAttribute="topMargin" id="Rhb-K3-2vi"/>
+                                        <constraint firstItem="lYI-0b-zYf" firstAttribute="top" secondItem="oGe-j8-NiR" secondAttribute="top" constant="6" id="U3P-Mg-zrG"/>
                                         <constraint firstAttribute="bottom" secondItem="b2n-oY-rGN" secondAttribute="bottom" constant="8" id="ans-qD-NI7"/>
-                                        <constraint firstItem="r40-MA-9bh" firstAttribute="leading" secondItem="oGe-j8-NiR" secondAttribute="leadingMargin" id="dtX-MW-J98"/>
                                         <constraint firstItem="r40-MA-9bh" firstAttribute="trailing" secondItem="oGe-j8-NiR" secondAttribute="trailingMargin" id="qof-ZD-2Cz"/>
+                                        <constraint firstItem="lYI-0b-zYf" firstAttribute="leading" secondItem="oGe-j8-NiR" secondAttribute="leading" constant="16" id="sz3-Yc-rSB"/>
                                         <constraint firstItem="b2n-oY-rGN" firstAttribute="top" secondItem="r40-MA-9bh" secondAttribute="bottom" constant="8" id="up2-B4-oZl"/>
+                                        <constraint firstItem="r40-MA-9bh" firstAttribute="leading" secondItem="lYI-0b-zYf" secondAttribute="trailing" constant="8" symbolic="YES" id="xaA-S8-tj7"/>
                                         <constraint firstAttribute="trailing" secondItem="b2n-oY-rGN" secondAttribute="trailing" constant="16" id="zXQ-Cz-Yk0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="b2n-oY-rGN" id="z4a-wJ-Jwi"/>
                                     <outlet property="descriptionLabel" destination="r40-MA-9bh" id="3AY-mF-SF1"/>
+                                    <outlet property="photoImageView" destination="lYI-0b-zYf" id="AdU-Zw-HqA"/>
                                     <segue destination="JXW-za-GZs" kind="show" identifier="EditLocation" id="s7v-nA-IjN"/>
                                 </connections>
                             </tableViewCell>
@@ -575,7 +585,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Hu-dy-Oay"/>
+        <segue reference="s7v-nA-IjN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
