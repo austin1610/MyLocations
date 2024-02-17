@@ -30,7 +30,7 @@ class HudView: UIView {
     UIColor(white: 0.3, alpha: 0.8).setFill()
     roundedRect.fill()
     // Draw checkmark
-    guard let image = UIImage(named: "Checkmarks") else { return }
+    guard let image = UIImage(named: "Checkmark") else { return }
     let imagePoint = CGPoint(x: center.x - round(image.size.width / 2), y: center.y - round(image.size.height / 2) - boxHeight / 8)
     image.draw(at: imagePoint)
     // Draw the text
