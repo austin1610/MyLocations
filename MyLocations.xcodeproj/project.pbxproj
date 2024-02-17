@@ -62,10 +62,6 @@
 		261ED0152B70CDB500F19BAA = {
 			isa = PBXGroup;
 			children = (
-				262B6A4F2B8043EB00BA0CD7 /* UIImage+Resize.swift */,
-				260FBDB42B7EE0220021AE5D /* MapViewController.swift */,
-				26BDEC822B7DBD6600F7BF8F /* LocationCell.swift */,
-				26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */,
 				265CB4C42B7D3E1C00798392 /* Location+CoreDataClass.swift */,
 				265CB4C52B7D3E1C00798392 /* Location+CoreDataProperties.swift */,
 				261ED0202B70CDB500F19BAA /* MyLocations */,
@@ -85,17 +81,21 @@
 			isa = PBXGroup;
 			children = (
 				261ED0212B70CDB500F19BAA /* AppDelegate.swift */,
-				261ED0232B70CDB500F19BAA /* SceneDelegate.swift */,
-				261ED0252B70CDB500F19BAA /* CurrentLocationViewController.swift */,
-				261ED0272B70CDB500F19BAA /* Main.storyboard */,
 				261ED02A2B70CDB800F19BAA /* Assets.xcassets */,
-				261ED02C2B70CDB800F19BAA /* LaunchScreen.storyboard */,
-				261ED02F2B70CDB800F19BAA /* Info.plist */,
-				26CEEEC92B73568700AFC3A0 /* LocationDetailsViewController.swift */,
 				26CEEECB2B74291800AFC3A0 /*  CategoryPickerViewController.swift */,
-				26CEEECD2B74351200AFC3A0 /* HudView.swift */,
+				261ED0252B70CDB500F19BAA /* CurrentLocationViewController.swift */,
 				26CEEECF2B743F0A00AFC3A0 /* Functions.swift */,
+				26CEEECD2B74351200AFC3A0 /* HudView.swift */,
+				261ED02F2B70CDB800F19BAA /* Info.plist */,
+				261ED02C2B70CDB800F19BAA /* LaunchScreen.storyboard */,
+				26CEEEC92B73568700AFC3A0 /* LocationDetailsViewController.swift */,
+				26BDEC7E2B7DB5B000F7BF8F /* LocationsViewController.swift */,
+				261ED0272B70CDB500F19BAA /* Main.storyboard */,
 				265CB4C12B7D3B8D00798392 /* MyLocations.xcdatamodeld */,
+				261ED0232B70CDB500F19BAA /* SceneDelegate.swift */,
+				26BDEC822B7DBD6600F7BF8F /* LocationCell.swift */,
+				260FBDB42B7EE0220021AE5D /* MapViewController.swift */,
+				262B6A4F2B8043EB00BA0CD7 /* UIImage+Resize.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
