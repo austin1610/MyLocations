@@ -121,6 +121,7 @@
                     <navigationItem key="navigationItem" id="ZA6-r8-hSV"/>
                     <connections>
                         <outlet property="addressLabel" destination="CeE-xi-po2" id="0gB-aL-lQh"/>
+                        <outlet property="containerView" destination="P4m-uV-utB" id="ppE-B3-dRl"/>
                         <outlet property="getButton" destination="D6f-Kd-3Eb" id="0dx-Kc-dko"/>
                         <outlet property="latitudeLabel" destination="2v0-5g-9VI" id="Kpf-85-zkC"/>
                         <outlet property="latitudeTextLabel" destination="3QB-xf-2kT" id="8EO-qp-lRs"/>
