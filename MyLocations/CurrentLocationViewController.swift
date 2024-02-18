@@ -198,6 +198,14 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
       updateLabels()
     }
   }
+    
+  func showLogoView() {
+      if !logoVisible {
+          logoVisible = true
+          containerView.isHidden = true
+          view.addSubview(logoButton)
+      }
+  }
 
   // MARK: - CLLocationManagerDelegate
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
