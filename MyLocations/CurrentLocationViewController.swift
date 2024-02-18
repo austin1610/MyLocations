@@ -326,7 +326,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         geocoder.reverseGeocodeLocation(newLocation) {placemarks, error in
           self.lastGeocodingError = error
           if error == nil, let places = placemarks, !places.isEmpty {
-            self.placemark = places.last!
+              if self.placemark == nil {
+                  print("FIRST TIME!")
+                  self.playSoundEffect()
+              }
+              self.placemark = places.last!
           } else {
             self.placemark = nil
           }
