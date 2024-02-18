@@ -418,7 +418,7 @@
         <scene sceneID="ejd-oq-mSU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KD5-l4-ouX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tag" id="P3y-ct-1Xw"/>
+                    <tabBarItem key="tabBarItem" title="Tag" image="Tag" id="P3y-ct-1Xw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hfv-fJ-Cyj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -505,7 +505,7 @@
         <scene sceneID="0RD-1t-CKe">
             <objects>
                 <navigationController id="G9a-tY-PM8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Locations" id="py3-pa-kEG"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="Locations" id="py3-pa-kEG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UlN-fx-0rZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -568,7 +568,7 @@
         <scene sceneID="SDl-ko-caa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rIG-Ie-G9P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="AUm-Rd-E8A"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="AUm-Rd-E8A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xD1-jj-OXS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -588,6 +588,9 @@
         <segue reference="4Hu-dy-Oay"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Locations" width="30" height="30"/>
+        <image name="Map" width="30" height="30"/>
+        <image name="Tag" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
