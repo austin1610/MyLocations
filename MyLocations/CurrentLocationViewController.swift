@@ -160,25 +160,18 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
   }
 
   func string(from placemark: CLPlacemark) -> String {
-    var line1 = ""
-    if let tmp = placemark.subThoroughfare {
-      line1 += tmp + " "
+      var line1 = ""
+      line1.add(text: placemark.subThoroughfare, separatedBy: "")
+      line1.add(text: placemark.thoroughfare, separatedBy: " ")
+     
+      var line2 = ""
+      line2.add(text: placemark.locality, separatedBy: "")
+      line2.add(text: placemark.administrativeArea, separatedBy: "")
+      line2.add(text: placemark.postalCode, separatedBy: " ")
+     
+      line1.add(text: line2, separatedBy: "\n")
+      return line1
     }
-    if let tmp = placemark.thoroughfare {
-      line1 += tmp
-    }
-    var line2 = ""
-    if let tmp = placemark.locality {
-      line2 += tmp + " "
-    }
-    if let tmp = placemark.administrativeArea {
-      line2 += tmp + " "
-    }
-    if let tmp = placemark.postalCode {
-      line2 += tmp
-    }
-    return line1 + "\n" + line2
-  }
 
   @objc func didTimeOut() {
     if location == nil {
