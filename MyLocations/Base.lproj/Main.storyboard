@@ -47,8 +47,8 @@
                                     <constraint firstAttribute="height" constant="50" id="ATu-U0-tSW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="1" alpha="0.60290122518734057" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="0.60216174482488305" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6f-Kd-3Eb">
                                 <rect key="frame" x="16" y="567" width="343" height="35"/>
@@ -585,7 +585,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Hu-dy-Oay"/>
+        <segue reference="JcV-1E-wax"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Locations" width="30" height="30"/>
