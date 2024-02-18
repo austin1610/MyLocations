@@ -78,6 +78,9 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
       showLocationServicesDeniedAlert()
       return
     }
+    if logoVisible {
+      hideLogoView()
+    }
     if updatingLocation {
       stopLocationManager()
     } else {
