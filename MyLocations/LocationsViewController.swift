@@ -68,8 +68,8 @@ class LocationsViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    let sectionInfo = fetchedResultsController.sections![section]
-    return sectionInfo.name
+      let sectionInfo = fetchedResultsController.sections![section]
+      return sectionInfo.name.uppercased()
   }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
