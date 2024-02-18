@@ -47,6 +47,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
   override func viewDidLoad() {
     super.viewDidLoad()
     updateLabels()
+    loadSoundEffect("Sound.caf")
   }
 
   override func viewWillAppear(_ animated: Bool) {
