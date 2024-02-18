@@ -111,7 +111,9 @@
                         <outlet property="addressLabel" destination="CeE-xi-po2" id="0gB-aL-lQh"/>
                         <outlet property="getButton" destination="D6f-Kd-3Eb" id="0dx-Kc-dko"/>
                         <outlet property="latitudeLabel" destination="2v0-5g-9VI" id="Kpf-85-zkC"/>
+                        <outlet property="latitudeTextLabel" destination="3QB-xf-2kT" id="8EO-qp-lRs"/>
                         <outlet property="longitudeLabel" destination="fgk-Ja-XVl" id="Wvs-ky-7UA"/>
+                        <outlet property="longitudeTextLabel" destination="1fZ-5v-fyv" id="Zed-O6-t4w"/>
                         <outlet property="messageLabel" destination="S68-UQ-1lG" id="gOf-UY-cRW"/>
                         <outlet property="tagButton" destination="svF-wx-VRF" id="8rI-O8-iQQ"/>
                     </connections>
@@ -589,7 +591,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Hu-dy-Oay"/>
+        <segue reference="JcV-1E-wax"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Locations" width="30" height="30"/>
