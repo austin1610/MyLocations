@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 import CoreData
 
-class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
+class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate, CAAnimationDelegate {
   @IBOutlet var messageLabel: UILabel!
   @IBOutlet var latitudeLabel: UILabel!
   @IBOutlet var longitudeLabel: UILabel!
